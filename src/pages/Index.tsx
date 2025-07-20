@@ -1,12 +1,26 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import ResumeHeader from "@/components/ResumeHeader";
+import ExperienceSection from "@/components/ExperienceSection";
+import SkillsSection from "@/components/SkillsSection";
+import EducationSection from "@/components/EducationSection";
+import ProjectsSection from "@/components/ProjectsSection";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <ResumeHeader />
+      
+      <main className="max-w-4xl mx-auto px-8 pb-12">
+        <ExperienceSection />
+        <SkillsSection />
+        <ProjectsSection />
+        <EducationSection />
+      </main>
+      
+      <footer className="bg-section-bg border-t border-section-border p-6 text-center">
+        <p className="text-text-muted text-sm">
+          © 2024 John Doe. All rights reserved.
+        </p>
+      </footer>
     </div>
   );
 };
