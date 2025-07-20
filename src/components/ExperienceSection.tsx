@@ -58,14 +58,14 @@ const ExperienceItem = ({ title, company, location, period, achievements }: {
   achievements: string[];
 }) => {
   return (
-    <div className="bg-section-bg border border-section-border rounded-lg p-6">
-      <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+    <div className="py-6">
+      <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-6">
         <div>
           <h3 className="text-lg font-semibold text-text-primary">{title}</h3>
           <p className="text-highlight font-medium">{company}</p>
           <p className="text-text-muted text-sm">{location}</p>
         </div>
-        <span className="text-text-secondary font-mono text-sm bg-muted px-3 py-1 rounded-full mt-2 md:mt-0">
+        <span className="text-text-secondary font-mono text-sm mt-2 md:mt-0">
           {period}
         </span>
       </div>

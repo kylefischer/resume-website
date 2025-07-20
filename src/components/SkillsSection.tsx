@@ -34,13 +34,13 @@ const SkillsSection = () => {
 
 const SkillCategory = ({ category, skills }: { category: string; skills: string[] }) => {
   return (
-    <div className="bg-section-bg border border-section-border rounded-lg p-6">
+    <div className="py-6">
       <h3 className="text-lg font-semibold text-highlight mb-4">{category}</h3>
       <div className="flex flex-wrap gap-2">
         {skills.map((skill, index) => (
           <span
             key={index}
-            className="bg-muted text-text-primary px-3 py-1 rounded-full text-sm font-medium hover:bg-highlight hover:text-primary-foreground transition-colors cursor-default"
+            className="bg-muted text-text-primary px-3 py-1 text-sm font-medium hover:bg-highlight hover:text-primary-foreground transition-colors cursor-default"
           >
             {skill}
           </span>

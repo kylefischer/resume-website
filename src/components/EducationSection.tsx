@@ -24,13 +24,13 @@ const EducationSection = () => {
         <div className="space-y-4">
           <h3 className="text-lg font-semibold text-text-primary">Education</h3>
           {education.map((edu, index) => (
-            <div key={index} className="bg-section-bg border border-section-border rounded-lg p-6">
+            <div key={index} className="py-6">
               <h4 className="font-semibold text-text-primary">{edu.degree}</h4>
               <p className="text-highlight font-medium">{edu.school}</p>
               <p className="text-text-muted text-sm">{edu.location}</p>
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-end mt-2 gap-2">
                 <span className="text-text-secondary text-sm">{edu.details}</span>
-                <span className="text-text-secondary font-mono text-sm bg-muted px-3 py-1 rounded-full">
+                <span className="text-text-secondary font-mono text-sm mt-2">
                   {edu.period}
                 </span>
               </div>
@@ -40,7 +40,7 @@ const EducationSection = () => {
 
         <div className="space-y-4">
           <h3 className="text-lg font-semibold text-text-primary">Certifications</h3>
-          <div className="bg-section-bg border border-section-border rounded-lg p-6">
+          <div className="py-6">
             <ul className="space-y-3">
               {certifications.map((cert, index) => (
                 <li key={index} className="flex items-start gap-3 text-text-secondary">

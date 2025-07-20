@@ -16,7 +16,7 @@ const Index = () => {
         <EducationSection />
       </main>
       
-      <footer className="bg-section-bg border-t border-section-border p-6 text-center">
+      <footer className="bg-section-bg p-6 text-center">
         <p className="text-text-muted text-sm">
           © 2024 John Doe. All rights reserved.
         </p>

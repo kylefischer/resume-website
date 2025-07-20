@@ -69,7 +69,7 @@ const ProjectCard = ({
   highlights: string[];
 }) => {
   return (
-    <div className="bg-section-bg border border-section-border rounded-lg p-6">
+    <div className="py-8 border-b border-section-border last:border-b-0">
       <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
         <div className="flex-1">
           <h3 className="text-lg font-semibold text-text-primary mb-2">{title}</h3>
@@ -99,7 +99,7 @@ const ProjectCard = ({
           {technologies.map((tech, index) => (
             <span
               key={index}
-              className="bg-muted text-text-primary px-2 py-1 rounded text-xs font-medium"
+              className="bg-muted text-text-primary px-2 py-1 text-xs font-medium"
             >
               {tech}
             </span>

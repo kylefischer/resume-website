@@ -2,7 +2,7 @@ import { Mail, Phone, MapPin, Linkedin, Github, Globe } from "lucide-react";
 
 const ResumeHeader = () => {
   return (
-    <header className="bg-section-bg border-b border-section-border p-8 mb-8">
+    <header className="bg-section-bg p-8 mb-12">
       <div className="max-w-4xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
           <div>
