@@ -25,4 +25,4 @@ A modern, responsive resume website built with React, TypeScript, and Tailwind C
    ```
 
 4. **Open your browser**
-   Navigate to `http://localhost:5173`
+   Navigate to `http://localhost:8000`
