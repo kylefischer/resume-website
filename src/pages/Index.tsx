@@ -10,15 +10,15 @@ const Index = () => {
       <ResumeHeader />
       
       <main className="max-w-4xl mx-auto px-8 pb-12">
+        <EducationSection />
         <ExperienceSection />
         <SkillsSection />
         <ProjectsSection />
-        <EducationSection />
       </main>
       
       <footer className="bg-section-bg p-6 text-center">
         <p className="text-text-muted text-sm">
-          © 2024 John Doe. All rights reserved.
+          © 2024 Kyle Fischer. All rights reserved.
         </p>
       </footer>
     </div>

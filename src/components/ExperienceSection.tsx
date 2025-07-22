@@ -1,39 +1,37 @@
 const ExperienceSection = () => {
   const experiences = [
     {
-      title: "Senior Software Developer",
-      company: "Tech Solutions Inc.",
-      location: "San Francisco, CA",
-      period: "2022 - Present",
+      title: "Data Analyst",
+      company: "Haas School of Business, University of California Berkeley",
+      location: "Berkeley, CA",
+      period: "Feb. 2025 - Present",
       achievements: [
-        "Led development of microservices architecture serving 1M+ users",
-        "Improved application performance by 40% through optimization",
+        "Optimized data quality and integrity by cleaning and standardizing multi-million entry datasets, boosting accuracy and consistency by 70% for analysis using Python (pandas) and SQL.",
+        "Built robust entity matching workflows across multi-source datasets using fuzzy string matching (e.g., Levenshtein distance, TF-IDF) to identify duplicates and resolve inconsistencies.",
         "Mentored 3 junior developers and conducted code reviews",
-        "Implemented CI/CD pipelines reducing deployment time by 60%"
+        "Ensured high-accuracy data integration by developing matching algorithms that achieved over 95% precision in cross-dataset entity resolution."
       ]
     },
     {
-      title: "Full Stack Developer",
-      company: "Digital Innovations Co.",
+      title: "Undergraduate Research Data Scientist",
+      company: "Berkeley School of Education CoRE Lab",
+      location: "Berkeley, CA",
+      period: "Jan. 2025 – May 2025",
+      achievements: [
+        "Developed and configured a web-crawler to systematically collect data from over 20 CS credentialing programs and 150+ courses throughout California.",
+        "Leveraged an NLP model, SBERT, to generate sentence embeddings and compute cosine similarity for alignment detection between programs.",
+        "Summarized findings through comprehensive reports and interactive data visualizations, supporting research dissemination to academic stakeholders and research communities.",
+      ]
+    },
+    {
+      title: "Data Analytics Externship",
+      company: "Beats by Dre",
       location: "Remote",
-      period: "2020 - 2022",
+      period: "Dec. 2024 – Apr. 2025",
       achievements: [
-        "Built responsive web applications using React and Node.js",
-        "Collaborated with design team to implement pixel-perfect UIs",
-        "Integrated third-party APIs and payment systems",
-        "Maintained 99.9% uptime for customer-facing applications"
-      ]
-    },
-    {
-      title: "Frontend Developer",
-      company: "StartupXYZ",
-      location: "New York, NY",
-      period: "2019 - 2020",
-      achievements: [
-        "Developed mobile-first responsive interfaces",
-        "Optimized bundle size reducing load times by 50%",
-        "Implemented A/B testing framework for feature rollouts",
-        "Contributed to open source projects and internal tooling"
+        "Conducted exploratory data analysis (EDA) and sentiment analysis on survey and customer review data usingPython, Pandas, and NumPy.",
+        "Built and cleaned datasets to ensure high-quality data for analysis, applying statistical methods and AI-driven insights to extract key trends.",
+        "Visualized consumer insights using interactive data dashboards (Tableau), leading to 5+ actionable business recommendations that informed product strategy."
       ]
     }
   ];

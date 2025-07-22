@@ -4,41 +4,30 @@ import { SectionTitle } from "./ExperienceSection";
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution with React, Node.js, and Stripe integration",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "Docker"],
-      github: "https://github.com/johndoe/ecommerce",
-      demo: "https://ecommerce-demo.johndoe.dev",
+      title: "Brawl Stars Analytics Dashboard",
+      description: "A comprehensive data analytics dashboard for Brawl Stars players that visualizes battle performance, brawler statistics, and game mode analysis using the official Brawl Stars API.",
+      technologies: ["Python", "Pandas", "NumPy", "Streamlit", "Plotly", "Brawlstats API"],
+      github: "https://github.com/kylefischer/brawl-stars-analytics",
       highlights: [
-        "Built responsive shopping cart and checkout flow",
-        "Implemented secure payment processing",
-        "Created admin dashboard for inventory management"
+        "Developed a Brawl Stars Analytics Dashboard to track in-game performance.",
+        "Integrated with Brawl Stars API to fetch and analyze 25 recent battle logs.",
+        "Generated 5 interactive visualizations for player, brawler, and game mode performance.",
+        "Calculated 10+ key performance metrics, including win rates and star player statistics.",
+        "Designed a user-friendly Streamlit interface with real-time data display and detailed tables."
       ]
     },
     {
-      title: "Task Management App",
-      description: "Collaborative task management tool with real-time updates and team features",
-      technologies: ["Next.js", "TypeScript", "Prisma", "WebSocket", "Tailwind"],
-      github: "https://github.com/johndoe/taskmanager",
-      demo: "https://tasks.johndoe.dev",
+      title: "Spotify Taste Profiler",
+      description: "A data science project that analyzes your Spotify listening history using machine learning clustering to discover hidden patterns in your music taste.",
+      technologies: ["Python", "Pandas", "Matplotlib", "Scikit-learn", "Spotipy API"],
+      github: "https://github.com/kylefischer/spotify-taste-profiler",
       highlights: [
-        "Real-time collaboration with WebSocket",
-        "Drag-and-drop task organization",
-        "Team management and permissions"
+        "Developed a Spotify Taste Profiler to analyze musical taste and identify patterns in music listening history.",
+        "Fetched and analyzed up to 300 top tracks from Spotify API to understand music preferences.",
+        "Generated 5 data visualizations (Elbow Method, Silhouette Analysis, Popularity vs. Duration, Genre Diversity, Popularity Distribution) to illustrate clustering results and patterns.",
+        "Implemented K-means clustering to identify 8-12 distinct music taste clusters."
       ]
     },
-    {
-      title: "Weather Dashboard",
-      description: "Beautiful weather application with location-based forecasts and interactive maps",
-      technologies: ["Vue.js", "OpenWeather API", "Chart.js", "Mapbox"],
-      github: "https://github.com/johndoe/weather-dashboard",
-      demo: "https://weather.johndoe.dev",
-      highlights: [
-        "Interactive weather maps",
-        "7-day forecast with charts",
-        "Location-based weather alerts"
-      ]
-    }
   ];
 
   return (
@@ -58,14 +47,12 @@ const ProjectCard = ({
   description, 
   technologies, 
   github, 
-  demo, 
   highlights 
 }: {
   title: string;
   description: string;
   technologies: string[];
   github: string;
-  demo: string;
   highlights: string[];
 }) => {
   return (
@@ -83,13 +70,6 @@ const ProjectCard = ({
           >
             <Github className="w-4 h-4" />
             <span className="text-sm">Code</span>
-          </a>
-          <a 
-            href={demo}
-            className="flex items-center gap-2 text-text-muted hover:text-highlight transition-colors"
-          >
-            <ExternalLink className="w-4 h-4" />
-            <span className="text-sm">Demo</span>
           </a>
         </div>
       </div>

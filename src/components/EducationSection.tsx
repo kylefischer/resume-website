@@ -3,18 +3,17 @@ import { SectionTitle } from "./ExperienceSection";
 const EducationSection = () => {
   const education = [
     {
-      degree: "Bachelor of Science in Computer Science",
+      degree: "Bachelor of Arts in Cognitive Science",
       school: "University of California, Berkeley",
       location: "Berkeley, CA",
-      period: "2015 - 2019",
-      details: "Graduated Magna Cum Laude • GPA: 3.8/4.0"
+      period: "2024 - 2026",
+      details: "Minor in Data Science"
     }
   ];
 
   const certifications = [
-    "AWS Certified Solutions Architect",
-    "Google Cloud Professional Developer",
-    "Certified Kubernetes Administrator (CKA)"
+    "IBM Python for Data Science, AI, and Development",
+    "Google AI Essentials",
   ];
 
   return (

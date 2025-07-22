@@ -3,20 +3,12 @@ import { SectionTitle } from "./ExperienceSection";
 const SkillsSection = () => {
   const skillCategories = [
     {
-      category: "Frontend",
-      skills: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Vue.js", "HTML/CSS"]
+      category: "Languages",
+      skills: ["Python", "SQL (Posgres)", "Javascript", "HTML/CSS", "R", "Java"]
     },
     {
-      category: "Backend",
-      skills: ["Node.js", "Python", "Express.js", "PostgreSQL", "MongoDB", "Redis"]
-    },
-    {
-      category: "DevOps & Tools",
-      skills: ["Docker", "AWS", "Git", "Jenkins", "Kubernetes", "Terraform"]
-    },
-    {
-      category: "Other",
-      skills: ["GraphQL", "REST APIs", "Jest", "Cypress", "Figma", "Agile/Scrum"]
+      category: "Technologies",
+      skills: ["Excel", "Tableau","Git","Pandas", "Numpy", "Matplotlib", "Scikit-Learn", "Tensorflow", "Jupyter", "FastAPI", "HuggingFace"]
     }
   ];
 
