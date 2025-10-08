@@ -21,17 +21,17 @@ const projectData = {
 
 type Slug = keyof typeof projectData;
 
-export function generateStaticParams() {
+export function generateStaticParams(): Array<{ slug: string }> {
   return Object.keys(projectData).map((slug) => ({ slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: Slug } }): Metadata {
-  const proj = projectData[params.slug];
+export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
+  const proj = projectData[params.slug as Slug];
   return { title: `${proj.title} — Projects` };
 }
 
-export default function ProjectDetail({ params }: { params: { slug: Slug } }) {
-  const proj = projectData[params.slug];
+export default function ProjectDetail({ params }: { params: { slug: string } }) {
+  const proj = projectData[params.slug as Slug];
   return (
     <main className="mx-auto max-w-6xl px-6 py-16 sm:py-24">
       <h1 className="text-right text-4xl font-semibold text-white/90">
