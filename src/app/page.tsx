@@ -5,7 +5,7 @@ export default function Home() {
     <main className="relative mx-auto max-w-6xl min-h-screen px-6 py-20 sm:py-28">
       <section className="max-w-3xl md:absolute md:left-0 md:top-[42%] md:-translate-y-1/2">
         <h1 className="text-4xl font-normal leading-tight tracking-tight text-white sm:text-5xl">
-          I'm <span className="opacity-90 font-extrabold">Kyle Fischer</span>,
+          I&apos;m <span className="opacity-90 font-extrabold">Kyle Fischer</span>,
           <br /> a <span className="opacity-90 font-extrabold">Data&nbsp;Science</span> & <span className="opacity-90 font-extrabold">Cognitive&nbsp;Science</span> student at <span className="opacity-90 font-extrabold">UC&nbsp;Berkeley</span>.
         </h1>
         <div className="mt-6 h-px w-96 bg-white" />
