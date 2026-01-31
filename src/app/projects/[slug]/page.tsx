@@ -17,6 +17,12 @@ const projectData = {
     skills: ["Python", 'Brawl Stars API', 'Streamlit', "Plotly"],
     links: [{ label: "GitHub", href: "https://github.com/kylefischer/brawl-stars-analytics" }],
   },
+  "mnist-neural-network": {
+    title: "MNIST Neural Network",
+    about: "This project is an adaptation of a school assignment, modified to train a fully-connected neural network on the MNIST handwritten digits dataset from scratch.",
+    skills: ["Python", "NumPy", "TensorFlow", "Matplotlib"],
+    links: [{ label: "GitHub", href: "https://github.com/kylefischer/mnst-nn-scratch" }],
+  },
 } as const;
 
 type Slug = keyof typeof projectData;

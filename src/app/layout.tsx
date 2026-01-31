@@ -6,8 +6,8 @@ const inter = Inter({ subsets: ["latin"], display: "swap", variable: "--font-int
 const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], display: "swap", variable: "--font-jetbrains" });
 
 export const metadata: Metadata = {
-  title: "Portfolio — Hero & Projects",
-  description: "Personal site with hero, projects, and details.",
+  title: "Kyle Fischer's Portfolio",
+  description: "Personal site to display my work and projects.",
 };
 
 export default function RootLayout({
