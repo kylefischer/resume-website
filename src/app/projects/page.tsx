@@ -2,19 +2,34 @@ import Link from "next/link";
 
 const projects = [
   {
+    slug: "automated-news-data-pipeline",
+    name: "Automated News Data Pipeline",
+    summary: "Python, PostgreSQL, Snowflake, dbt, Apache Airflow, Docker, GitHub Actions",
+  },
+  {
+    slug: "2025-move-analysis",
+    name: "2025 Health Data Analysis",
+    summary: "Python, Pandas, NumPy, Matplotlib, scikit-learn, SciPy, requests",
+  },
+  {
     slug: "spotify-taste-profiler",
-    name: "Spotify Taste Profiler",
+    name: "Music Listening Behavior Clustering",
     summary: "Python, Pandas, Numpy, Scikit-learn, matplotlib, seaborn",
   },
   {
     slug: "brawl-stars-analytics",
-    name: "Brawl Stars Analytics",
+    name: "Real-Time Game Analytics Dashboard",
     summary: "Python, Brawl Stars API, Streamlit, Plotly",
   },
   {
     slug: "mnist-neural-network",
-    name: "MNIST Neural Network",
+    name: "MNIST Neural Network from Scratch",
     summary: "Python, NumPy, TensorFlow, Matplotlib",
+  },
+  {
+    slug: "arduino-live-weather-feed",
+    name: "Arduino Live Weather Feed",
+    summary: "Python, Arduino",
   },
 ];
 

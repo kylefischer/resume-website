@@ -2,26 +2,44 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 const projectData = {
+  "2025-move-analysis": {
+    title: "2025 Health Data Analysis",
+    about: "This project analyzes a full year of Apple Health step data to quantify how daily activity shifts across the academic calendar and whether routine leaves a learnable signal in the data.",
+    skills: ["Python", "Pandas", "NumPy", "Matplotlib", "scikit-learn", "SciPy", "requests"],
+    links: [{ label: "GitHub", href: "https://github.com/kylefischer/2025-Move-Analysis" }],
+  },
+  "automated-news-data-pipeline": {
+    title: "Automated News Data Pipeline",
+    about: "A production-ready data pipeline that scrapes top posts from r/ArtificialInteligence, loads them into Snowflake, and transforms them into analytics-ready tables using dbt -- all orchestrated by Apache Airflow and fully Dockerized for one-command deployment.",
+    skills: ["Python", "PosgreSQL", "Snowflake", "dbt", "Apache Airflow", "Docker", "GitHub Actions"],
+    links: [{ label: "GitHub", href: "https://github.com/kylefischer/Automated-News-Data-Pipeline" }],
+  },
   'spotify-taste-profiler': {
-    title: "Spotify Taste Profiler",
+    title: "Music Listening Behavior Clustering",
     about:
       "A machine learning–powered data science project that analyzes your Spotify listening history to uncover hidden patterns in your music taste. Using K-means clustering and the Spotify Web API, it groups your favorite tracks into distinct “music personalities,” revealing insights about genre preferences, artist loyalty, and listening trends.",
     skills: ['Python', 'Spotify API', 'pandas', 'NumPy', 'scikit-learn', 'Matplotlib', 'seaborn'],
     links: [
-      { label: "GitHub", href: "https://github.com/kylefischer/spotify-taste-profiler" },
+      { label: "GitHub", href: "https://github.com/kylefischer/Music-Listening-Behavior-Clustering" },
     ],
   },
   "brawl-stars-analytics": {
-    title: "Brawl Stars Analytics",
+    title: "Real-Time Game Analytics Dashboard",
     about: "A data-driven dashboard that visualizes real-time player performance and game insights using the official Brawl Stars API. Built with Python, Streamlit, and Plotly, it analyzes recent battles to display win rates, brawler statistics, and mode-specific performance trends.",
     skills: ["Python", 'Brawl Stars API', 'Streamlit', "Plotly"],
-    links: [{ label: "GitHub", href: "https://github.com/kylefischer/brawl-stars-analytics" }],
+    links: [{ label: "GitHub", href: "https://github.com/kylefischer/Real-Time-Game-Analytics-Dashboard" }],
   },
   "mnist-neural-network": {
-    title: "MNIST Neural Network",
+    title: "MNIST Neural Network from Scratch",
     about: "This project is an adaptation of a school assignment, modified to train a fully-connected neural network on the MNIST handwritten digits dataset from scratch.",
     skills: ["Python", "NumPy", "TensorFlow", "Matplotlib"],
-    links: [{ label: "GitHub", href: "https://github.com/kylefischer/mnst-nn-scratch" }],
+    links: [{ label: "GitHub", href: "https://github.com/kylefischer/MNIST-Neural-Network-from-scratch" }],
+  },
+  "arduino-live-weather-feed": {
+    title: "Arduino Live Weather Feed",
+    about: "A real-time weather monitoring system that bridges Python and Arduino. It fetches live meteorological data via the OpenWeatherMap API and streams formatted strings over a serial connection to a 16x2 LCD display.",
+    skills: ["Python", "Arduino"],
+    links: [{ label: "GitHub", href: "https://github.com/kylefischer/Arduino-Live-Weather-Feed" }],
   },
 } as const;
 
